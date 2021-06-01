@@ -7,33 +7,79 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="main.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+<div class = "circles">
+  <svg xmlns="http://www.w3.org/2000/svg" width="146" height="145">
+    <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+      <circle cx="63" cy="82" r="62.5"></circle>
+      <circle cx="105" cy="41" r="40.5"></circle>
+    </g>
+  </svg>
+</div>
+ 
+  <div class="header">
+    <span class="title">
+      Simple, traffic-based pricing
+    </span><br>
 
-  Pageviews
-  $ /month
 
-  Monthly Billing
-  Yearly Billing 25% discount
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+    <span class="subtitle">
+      Sign-up for our 30-day trial. No credit card required.
+    </span>
+  </div> 
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="main">
+    
+    <span class="pageviews">
+      <span class="views" id="demo"> </span>  <span class="price"> <span class="cost" id="cost">$8</span>/month</span>
+    </span><br>
+    
+    <div class="slidecontainer">
+      <input type="range" min="0" max="4" value="2" class="slider" id="myRange">
+    </div>
+
+    <span class="billing">
+      Monthly Billing 
+    </span>
+    <!-- Rounded switch -->
+    <label class="switch">
+     <input type="checkbox" id="billing-mode">
+      <span class="slide round"></span>
+    </label>
+
+    <span class="maindiscount">
+      Yearly Billing 
+    
+    <span class="discount">
+      25% discount
+    </span><br>
+ 
+ 
+ 
+  </span>
+
+<div class="details">
+
+
+  <img src="images/icon-check.svg"><span>   Unlimited websites
+   </span><br><br>
+
+   <img src="images/icon-check.svg"><span>
+    100% data ownership
+   </span><br><br>
+   <img src="images/icon-check.svg"><span>
+      Email reports
+    </span>
+   
+    <button> Start my trial </button>
+</div>  
+   
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
